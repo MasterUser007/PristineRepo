@@ -1,0 +1,2 @@
+[flake8]
+exclude = backup_*,old_*,temp_*,junk_*,*.bak,*.old,*.tmp,__pycache__
