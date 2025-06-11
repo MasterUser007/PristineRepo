@@ -1,7 +1,7 @@
 # PristineRepo
 
 ## Overview
-PristineRepo is a high-performance prime discovery engine utilizing **symbolic filtering**, **GPU-accelerated sieving**, and **probabilistic validation** to optimize computational efficiency. Designed for cryptographic applications, mathematical research, and high-speed numeric processing, it systematically eliminates composite candidates before running intensive primality tests.
+PristineRepo contains a high-performance suite of tools (ExoSuite), which is comprised of multiple Patent-pending crytography tools. These engines: PrimeEngineAI, FactorEngine, and QuantumHash, along with a specialize layered symbolic cache engine that is the orchestration and symbiotic functions of the entire ExoSuite ecosystem; designed with speed and accuracy in mind, ExoSuite leverages **symbolic filtering**, **GPU-accelerated sieving**, and **probabilistic validation** to optimize computational efficiency. Designed for cryptographic applications, mathematical research, and high-speed numeric processing, it systematically eliminates unnecessary candidates before running intensive primality tests. All to produce the fastest, most powerful self-learning suite of its kind.
 
 ## Features
 - **Symbolic Filtering & Truncation** – Excludes non-prime candidates early based on digit structure and modular arithmetic.
