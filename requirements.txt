@@ -45,7 +45,7 @@ dparse==0.6.4
 et_xmlfile==2.0.0
 execnet==2.1.1
 executing==2.2.0
--e git+https://github.com/MasterUser007/PristineRepo@d1d70a7459fa2511306163a597509ef6bc8dcf5a#egg=exosuite_optimized
+-e git+https://github.com/MasterUser007/PristineRepo@da96139e8a5c00fb0085c701207fa4e2472a62be#egg=exosuite_optimized
 fastapi==0.115.12
 fastjsonschema==2.21.1
 filelock==3.16.1
