@@ -11,4 +11,4 @@ def test_multiplication():
 
 def test_division_by_zero():
     with pytest.raises(ZeroDivisionError):
-    	1 / 0
+        1 / 0
