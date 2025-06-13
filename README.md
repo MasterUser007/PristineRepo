@@ -1,9 +1,11 @@
 # PristineRepo
 
 ## Overview
+
 This repo contains a high-performance suite of tools (ExoSuite), which is comprised of multiple Patent-pending cryptography tools. The component engines: PrimeEngineAI, FactorEngine, QuantumHash, and the Layered Symbolic Cache engine that controls the orchestration and symbiotic functions of/for the entire ExoSuite ecosystem, were designed with speed, accuracy, power, intellegence and the Paretto Efficiency principles as the blueprint for this suite. ExoSuite leverages **symbolic filtering**, **GPU-accelerated sieving**, **Intellegent Layered Symbolic Caching** and **probabilistic validation** to optimize computational efficiency; it systematically eliminates all unnecessary candidates before running intensive primality tests. This lowers compute time and cost substantially. Designed for cryptographic applications, mathematical research, and high-speed numeric processing, ExoSuite is the fastest, most powerful self-learning suite of its kind, and the only suite that can reach numbersets 10^500 and higher.
 
 ## Features
+
 - **Symbolic Filtering & Truncation** – Excludes non-prime candidates early based on digit structure and modular arithmetic.
 - **GPU-Accelerated Sieving** – Uses CUDA to parallelize composite detection.
 - **Infinitesimal Remainder Analysis** – Lightweight heuristic filters before deeper validation.
@@ -15,14 +17,17 @@ This repo contains a high-performance suite of tools (ExoSuite), which is compri
 ## Installation
 
 ### Requirements
+
 - Python 3.8+
 - CUDA-enabled GPU (optional for acceleration)
 - GMP library for large-number arithmetic
 - Docker (recommended for containerized deployments)
 
 ### Setup
+
 ```sh
 git clone https://github.com/PristineRepo/PristineRepo.git
 cd PristineRepo
 pip install -r requirements.txt
 
+```

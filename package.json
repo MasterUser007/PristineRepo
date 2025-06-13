@@ -1,0 +1,14 @@
+{
+  "name": "pristinerepo",
+  "version": "1.0.0",
+  "description": "A clean Jest setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "jest": "^30.0.0"
+  }
+}
