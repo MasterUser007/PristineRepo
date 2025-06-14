@@ -1,3 +1,4 @@
+
 # PristineRepo
 
 ## Overview
@@ -30,4 +31,14 @@ git clone https://github.com/PristineRepo/PristineRepo.git
 cd PristineRepo
 pip install -r requirements.txt
 
+
+
+# ExoSuite
+
+![CI](https://github.com/MasterUser007/ExoSuite/actions/workflows/ci.yml/badge.svg)
+
+Welcome to ExoSuite � Symbolic Prime Discovery and Factor Intelligence Suite.
+>>>>>>> 775b785 (Initialize PristineRepo with merged files)
+
 ```
+>>>>>>> 23ec01f9 (Auto-sync: All tests passed, pushing to repo)
