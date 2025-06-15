@@ -1,0 +1,3 @@
+[submodule "src/exosuite-optimized"]
+	path = src/exosuite-optimized
+	url = https://github.com/MasterUser007/ExoSuite.git
