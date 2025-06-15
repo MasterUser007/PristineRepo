@@ -1,7 +1,7 @@
 name: CI/CD Automation
 
 on:
-  workflow_dispatch: {}  # 🔧 Ensures proper registration
+  workflow_dispatch: {}
   push:
     branches:
       - main
@@ -12,12 +12,12 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+      
+      - name: Install Dependencies
+        run: npm install
+      
+      - name: Verify Jest Installation
+        run: npx jest --version
+
       - name: Run Tests
         run: npm test
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy Code
-        run: ./deploy.sh
