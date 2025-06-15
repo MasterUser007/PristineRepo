@@ -1,7 +1,11 @@
 name: CI/CD Automation
-on:\n  workflow_dispatch:\n  push:
+
+on:
+  workflow_dispatch:
+  push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,4 +21,3 @@ jobs:
     steps:
       - name: Deploy Code
         run: ./deploy.sh
-
