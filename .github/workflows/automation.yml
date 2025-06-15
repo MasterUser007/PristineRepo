@@ -1,6 +1,5 @@
 name: CI/CD Automation
-on:
-  push:
+on:\n  workflow_dispatch:\n  push:
     branches:
       - main
 jobs:
@@ -18,3 +17,4 @@ jobs:
     steps:
       - name: Deploy Code
         run: ./deploy.sh
+
