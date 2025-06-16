@@ -1,5 +1,4 @@
 {
-  "maxWorkers": "50%",  # Use half of available CPU cores
-  "testEnvironment": "node",
-  "testRetryAttempts": 2
+  "maxWorkers": "50%",
+  "testEnvironment": "node"
 }
