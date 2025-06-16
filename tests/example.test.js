@@ -6,5 +6,5 @@ test('Handles negative numbers', () => {
   expect(sum(-2, -3)).toBe(-5);
 });
 test('Verifies object structure', () => {
-  expect({ name: "Lee", age: 30 }).toMatchObject({ name: "Lee" });
+  expect({ name: 'Lee', age: 30 }).toMatchObject({ name: 'Lee' });
 });
