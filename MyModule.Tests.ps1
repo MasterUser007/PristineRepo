@@ -1,5 +1,5 @@
 # ML-INSTRUMENTED
-Import-Module ./pavi_ml.psm1
+
 
 Describe "Get-Greeting" {
     It "returns correct greeting" {
