@@ -8202,6 +8202,7 @@ loader_tags.pyi
 loaders.py
 loaders.pyi
 local.pyi
+local_files.txt
 local_provisioner.py
 locale.py
 locale.pyi
@@ -8322,6 +8323,7 @@ minidom.pyi
 mips.py
 misc.html
 misc.py
+missing_files.txt
 mixed.py
 mixins.pyi
 mkdocs.yml
@@ -8796,6 +8798,7 @@ remove_stale_contenttypes.pyi
 renderer.py
 renderers.pyi
 replstartup.py
+repo_files.txt
 repo_health_check.ps1
 repo_inventory.txt
 repo_structure.txt
