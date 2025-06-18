@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: ExoSuite Factoring Orchestration API
+  version: 1.0.0
+paths:
+  /factor:
+    get:
+      summary: Orchestrate factoring for a number
+      parameters:
+        - in: query
+          name: n
+          schema:
+            type: integer
+          required: true
+          description: Integer to factor
+      responses:
+        '200':
+          description: JSON with factor lists and cache stats
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  PrimeEngineAI:
+                    type: array
+                    items:
+                      type: integer
+                  QuantumHash:
+                    type: array
+                    items:
+                      type: integer
+                  FactorEngine:
+                    type: boolean
+                  symbolic_cache_hit:
+                    type: boolean
+                  factor_cache_hit:
+                    type: boolean
+                  hash_cache_hit:
+                    type: boolean
