@@ -42,3 +42,5 @@ Welcome to ExoSuite � Symbolic Prime Discovery and Factor Intelligence Suite.
 
 ```
 >>>>>>> 23ec01f9 (Auto-sync: All tests passed, pushing to repo)
+
+![Coverage](https://codecov.io/gh/MasterUser007/PristineRepo/branch/main/graph/badge.svg)
