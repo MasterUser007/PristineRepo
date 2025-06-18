@@ -1,0 +1,30 @@
+
+name: ExoSuite CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install -r FactorEngine/requirements.txt
+        pip install -r QuantumHash/requirements.txt
+        pip install -r PrimeEngineAI/requirements.txt
+
+    - name: Run Unit Tests
+      run: |
+        pytest FactorEngine/tests/
+        pytest QuantumHash/tests/
+        pytest PrimeEngineAI/tests/
+
+    - name: Run Integration Tests
+      run: pytest tests/integration/

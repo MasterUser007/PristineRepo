@@ -1,0 +1,15 @@
+site_name: ExoSuite Documentation
+repo_url: https://github.com/your-org/exosuite
+theme:
+  name: material
+nav:
+  - Formulas: docs/formulas.md
+  - ML Methods: docs/ml_methods.md
+  - Home: index.md
+  - Engines:
+      - PrimeEngineAI: primeengineai.md
+      - QuantumHash: quantumhash.md
+      - FactorEngine: factorengine.md
+  - Glossary: glossary.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
