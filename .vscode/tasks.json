@@ -1,0 +1,12 @@
+﻿{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "💾 Commit & Push All",
+      "type": "shell",
+      "command": "pwsh",
+      "args": ["-ExecutionPolicy", "Bypass", "-File", "./scripts/pristine.ps1"],
+      "problemMatcher": []
+    }
+  ]
+}
