@@ -1,0 +1,17 @@
+name: Reflex Patch Lifecycle
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, labeled]
+
+jobs:
+  sandbox-test:
+    if: contains(github.event.pull_request.labels.*.name, 'reflex-autoheal')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate Reflex Patch
+        run: pwsh ./scripts/prime.test.sandbox.ps1

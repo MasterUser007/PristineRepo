@@ -1,0 +1,22 @@
+name: Reflex Guard – Enforce SOD
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  sod-filter:
+    if: contains(github.event.pull_request.labels.*.name, 'reflex-autoheal')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for SOD-Protected Files
+        run: |
+          forbidden=\
+          if [ ! -z "\" ]; then
+            echo "🚫 SOD Violation Detected:"
+            echo "\"
+            exit 1
+          else
+            echo "✅ SOD check passed"
+          fi
