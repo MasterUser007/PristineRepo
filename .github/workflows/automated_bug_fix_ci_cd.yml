@@ -2,8 +2,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  fix:
+  autobugfix:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo '🐞 Bugfix triggered via Prime reflex'
+      - run: echo '🛠️ Self-patched by Prime: automated_bug_fix_ci_cd.yml'
