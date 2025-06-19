@@ -1,16 +1,14 @@
-.venv/
+__pycache__/
+.hypothesis/
+*.key
+*.lock
+*.log
+*.secret
+build/
+coverage/
+dist/
 node_modules/
-
-# ? Auto-added exclusions
-.pytest_cache/
-src/**/.pytest_cache/
-*.zip
-*.pack
-*.dll
-
-# ? Auto-added exclusions
-.pytest_cache/
-src/**/.pytest_cache/
-*.zip
-*.pack
-*.dll
+package-lock.json
+symbolic-cache/
+test-results/
+venv/

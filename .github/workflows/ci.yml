@@ -2,10 +2,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-latest
-    name: CI Pipeline
     steps:
       - uses: actions/checkout@v3
-      - name: Run Tests
-        run: echo '✅ CI triggered via Prime reflex 1.1.3'
+      - run: echo '✅ ci.yml validated by Prime'

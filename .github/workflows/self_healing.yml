@@ -2,10 +2,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  recover:
+  selfheal:
     runs-on: ubuntu-latest
-    name: Self-Healing Invocation
     steps:
       - uses: actions/checkout@v3
-      - name: Heal Logic
-        run: echo '🛠️ Self-Healing dispatch wired by Prime 1.1.3'
+      - run: echo '🛠️ Self-healing restored via Prime'

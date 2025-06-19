@@ -1,3 +1,9 @@
 on:
   workflow_dispatch:
 
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo '🐞 Bugfix triggered via Prime reflex'
