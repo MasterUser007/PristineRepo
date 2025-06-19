@@ -1,0 +1,7 @@
+.hypothesis/
+__pycache__/
+coverage/
+*.key
+*.lock
+*.secret
+package-lock.json
