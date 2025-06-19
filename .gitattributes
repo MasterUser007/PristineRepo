@@ -1,1 +1,7 @@
-* text=auto
+# Normalize PowerShell scripts
+*.ps1 text eol=lf
+
+# Normalize YAML and Markdown too
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
