@@ -1,0 +1,27 @@
+name: 🛡️ Prime Reflex Watchdog
+
+on:
+  workflow_run:
+    workflows:
+      - CI/CD Automation
+      - CI/CD Fresh Automation
+      - Automated Bug Fix & CI/CD
+    types:
+      - completed
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  monitor:
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Prime Reflex Loop Trigger
+        run: |
+          echo "⚡ Triggering Prime Reflex Loop"
+          pwsh ./prime.repair.auto.ps1
