@@ -1,0 +1,20 @@
+{
+  "PrimeEngineAI": {
+    "Signature": "orchestrator",
+    "Archetype": "reasoner",
+    "LastUpdated": "2025-06-19 14:13:59Z",
+    "Tier": "symbolic-core"
+  },
+  "QuantumEngine": {
+    "Signature": "wave",
+    "Archetype": "generator",
+    "LastUpdated": "2025-06-19 14:13:59Z",
+    "Tier": "symbolic-executor"
+  },
+  "FactorEngine": {
+    "Signature": "decomposer",
+    "Archetype": "observer",
+    "LastUpdated": "2025-06-19 14:13:59Z",
+    "Tier": "symbolic-analyst"
+  }
+}

@@ -1,0 +1,3 @@
+digraph G {
+  "QuantumEngine" -> "FactorEngine" [label="Streaming symbolic delta"];
+}

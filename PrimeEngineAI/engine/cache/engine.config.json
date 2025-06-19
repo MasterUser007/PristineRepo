@@ -1,0 +1,9 @@
+﻿{
+  "engineId": "cache",
+  "version": "1.0.0",
+  "requiresCache": true,
+  "docs": "docs/",
+  "scripts": "scripts/",
+  "supportKbPath": ".support_kb",
+  "created": "2025-06-18T20:54:00"
+}

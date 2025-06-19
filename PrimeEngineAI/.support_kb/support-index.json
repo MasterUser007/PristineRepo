@@ -1,0 +1,10 @@
+﻿{
+    "tags":  [
+                 "git",
+                 "bootstrap",
+                 "recovery"
+             ],
+    "description":  "Restores missing dev bootstrap",
+    "created":  "2025-06-18T20:41:52",
+    "fixId":  "restore-bootstrap"
+}
