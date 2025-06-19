@@ -10,13 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check for SOD-Protected Files
+      - name: SOD Protected File Check (PowerShell)
+        shell: pwsh
         run: |
-          forbidden=\
-          if [ ! -z "\" ]; then
-            echo "🚫 SOD Violation Detected:"
-            echo "\"
+          \ = git diff --name-only origin/main HEAD | Where-Object { \ -match '\.env|secrets\.ya?ml|prod\.ya?ml' }
+          if (\) {
+            Write-Host "🚫 SOD Violation Detected:
+\"
             exit 1
-          else
-            echo "✅ SOD check passed"
-          fi
+          } else {
+            Write-Host "✅ SOD check passed"
+          }
