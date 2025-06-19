@@ -1,0 +1,13 @@
+name: 💥 Prime Reflex E2E Induced Failure
+
+on:
+  push:
+
+jobs:
+  failme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Induce error
+        run: |
+          echo "💥 Simulated test failure"
+          exit 1
