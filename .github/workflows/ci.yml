@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo '🔁 Reflex patched workflow: ci.yml'
+      - run: echo '✅ Reflex-patched: ci.yml'
