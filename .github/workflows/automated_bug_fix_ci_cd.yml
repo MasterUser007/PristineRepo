@@ -1,9 +1,13 @@
+# [⚠️ DISABLED by ReflexOps] Broken runner awaiting rewrite
+
+name: 🚫 Disabled: Automated Bug Fix CI/CD
+
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Manual-only to preserve logs
 
 jobs:
-  autobugfix:
+  placeholder:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: echo '🛠️ Self-patched by Prime: automated_bug_fix_ci_cd.yml'
+      - name: Disabled
+        run: echo '⛔ This workflow is currently disabled by ReflexOps'
