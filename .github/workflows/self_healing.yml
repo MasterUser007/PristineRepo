@@ -1,4 +1,7 @@
-﻿name: Automated Bug Fix & CI/CD
+on:
+  workflow_dispatch:
+
+name: Automated Bug Fix & CI/CD
 
 on:
   push:
@@ -40,3 +43,4 @@ jobs:
           npm install --force
           npm run lint --fix || echo "Linter issues detected"
           git commit -am "Auto-fixed linting & dependencies" && git push || echo "No fixes applied"
+

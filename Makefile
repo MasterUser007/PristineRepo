@@ -1,8 +1,7 @@
-﻿commit-all:
-    pwsh -ExecutionPolicy Bypass -File ./scripts/pristine.ps1
-
-validate:
-    npx jest
+﻿finalize:
+    powershell -ep Bypass -File ./scripts/finalize-poc.ps1
 
 release:
-    pwsh ./scripts/release.ps1
+    git push origin main
+    git tag -a v1.0.0 -m "Initial release"
+    git push origin v1.0.0
