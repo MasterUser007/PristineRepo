@@ -73,3 +73,11 @@ Welcome to ExoSuite � Symbolic Prime Discovery and Factor Intelligence Suite.
 | **Reflex E2E Induced Failure**   | ✅ Simulated   | Controlled failure to verify CI warning handling     |
 
 
+
+<!-- reflexops:start -->
+### ✅ All deprecated workflows tombstoned
+
+![Tombstone Verified](https://img.shields.io/badge/ReflexOps--Tombstones-Verified-28a745?style=for-the-badge)
+
+_Last verified: 2025-06-20T14:57:47Z UTC_
+<!-- reflexops:end -->
