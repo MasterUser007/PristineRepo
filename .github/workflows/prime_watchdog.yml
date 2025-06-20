@@ -3,8 +3,8 @@ on:
   schedule:
     - cron: '0 */6 * * *'
 
+
 name: Prime Reflex Watchdog
-    - cron: '0 3 * * *'  # Daily at 3 AM UTC
 jobs:
   watchdog:
     runs-on: ubuntu-latest
