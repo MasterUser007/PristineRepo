@@ -1,10 +1,14 @@
-# 🔒 Workflow disabled by ReflexOps
-name: DISABLED: automation.yml
+# 🔒 Deprecated by ReflexOps
+name: Tombstoned: automation.yml
 on:
-  workflow_call:
-    types: [disabled]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
 jobs:
-  skip:
+  tombstone:
+    if: always()
     runs-on: ubuntu-latest
     steps:
-    - run: echo '⛔ automation.yml has been disabled by ReflexOps'
+      - name: Deprecated Workflow Exit
+        run: echo '🛑 automation.yml is deprecated and exits silently.'

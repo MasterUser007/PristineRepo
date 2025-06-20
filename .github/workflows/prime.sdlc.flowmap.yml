@@ -1,10 +1,14 @@
-# 🔒 Workflow disabled by ReflexOps
-name: DISABLED: prime.sdlc.flowmap.yml
+# 🔒 Deprecated by ReflexOps
+name: Tombstoned: prime.sdlc.flowmap.yml
 on:
-  workflow_call:
-    types: [disabled]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
 jobs:
-  skip:
+  tombstone:
+    if: always()
     runs-on: ubuntu-latest
     steps:
-    - run: echo '⛔ prime.sdlc.flowmap.yml has been disabled by ReflexOps'
+      - name: Deprecated Workflow Exit
+        run: echo '🛑 prime.sdlc.flowmap.yml is deprecated and exits silently.'
