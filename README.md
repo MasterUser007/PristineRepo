@@ -71,3 +71,4 @@ Welcome to ExoSuite � Symbolic Prime Discovery and Factor Intelligence Suite.
 | **CI/CD Fresh Automation**       | ✅ Active      | Custom jobset triggered by ReflexFinal profile runs  |
 | **Prime Reflex Watchdog**        | ✅ Active      | Fast periodic scanner for regression detection       |
 | **Reflex E2E Induced Failure**   | ✅ Simulated   | Controlled failure to verify CI warning handling     |
+
