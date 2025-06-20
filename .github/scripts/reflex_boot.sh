@@ -1,14 +1,10 @@
 #!/bin/bash
-# reflex_boot.sh — runs CI/CD bootstrap logic
+# reflex_boot.sh — your CI/CD orchestrator
 
 set -e
 echo "🚀 ReflexOps bootstrap triggered"
+[ ! -d ".git" ] && { echo "❌ Not in Git repo"; exit 1; }
 
-if [ ! -d ".git" ]; then
-  echo "❌ Not inside Git repo"; exit 1
-fi
-
-# Replace with actual CI logic
-echo "⚙️ CI logic placeholder — replace with prime_pipeline.sh"
-
+# Replace below with your pipeline logic
+echo "🧪 Running ReflexOps CI scaffolding..."
 echo "✅ ReflexOps bootstrap complete"
