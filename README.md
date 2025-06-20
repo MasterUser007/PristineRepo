@@ -58,3 +58,16 @@ Welcome to ExoSuite � Symbolic Prime Discovery and Factor Intelligence Suite.
 
 
 
+
+## 🧪 GitHub Actions Workflows
+
+| Workflow Name                     | Status         | Description                                          |
+|----------------------------------|----------------|------------------------------------------------------|
+| **Reflex CI**                    | ✅ Active      | CI boot via `ReflexFinal.ps1`                        |
+| **Reflex Health Monitor**        | ✅ Active      | Weekly profile audit (`.reflexrun.log.json`)         |
+| **Reflex Autofix Guard**         | ✅ Active      | Stops ReflexBot loops and duplicate runs             |
+| **Reflex Bug Fix CI/CD**         | ❌ Disabled    | Archived. No longer triggers automation              |
+| **CI/CD Automation**             | ❌ Removed     | Legacy runner (no longer present in repo)            |
+| **CI/CD Fresh Automation**       | ✅ Active      | Custom jobset triggered by ReflexFinal profile runs  |
+| **Prime Reflex Watchdog**        | ✅ Active      | Fast periodic scanner for regression detection       |
+| **Reflex E2E Induced Failure**   | ✅ Simulated   | Controlled failure to verify CI warning handling     |
