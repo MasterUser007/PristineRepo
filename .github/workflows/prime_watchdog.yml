@@ -1,9 +1,7 @@
-name: Prime Watchdog
+name: Prime Reflex Watchdog
 on:
-  workflow_dispatch:
-
-
-
+  schedule:
+    - cron: '0 3 * * *'  # Daily at 3 AM UTC
 jobs:
   watchdog:
     runs-on: ubuntu-latest
@@ -12,3 +10,5 @@ jobs:
     - name: Run Reflex Health Check
       shell: pwsh
       run: pwsh ./scripts/ReflexHealthCheck.ps1
+
+# trigger metadata reload
