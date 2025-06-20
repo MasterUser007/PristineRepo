@@ -1,3 +1,5 @@
+![ReflexOps Verified](https://img.shields.io/badge/ReflexOps-CI--Stable-22c55e?style=flat-square&logo=powershell)
+![CI Status](https://github.com/MasterUser007/PristineRepo/actions/workflows/ci.yml/badge.svg)
 ![CI](https://github.com/leebo/PristineRepo/actions/workflows/ci.yml/badge.svg)
 ![Coverage](https://codecov.io/gh/leebo/PristineRepo/branch/main/graph/badge.svg)
 
