@@ -72,3 +72,4 @@ Welcome to ExoSuite � Symbolic Prime Discovery and Factor Intelligence Suite.
 | **Prime Reflex Watchdog**        | ✅ Active      | Fast periodic scanner for regression detection       |
 | **Reflex E2E Induced Failure**   | ✅ Simulated   | Controlled failure to verify CI warning handling     |
 
+
