@@ -1,4 +1,7 @@
-name: Prime Reflex Watchdog
+name: Prime Watchdog
+on:
+  workflow_dispatch:
+
 on:
   schedule:
     - cron: '0 3 * * *'  # Daily at 3 AM UTC
@@ -15,3 +18,4 @@ jobs:
 
 # Trigger reindex [2025-06-20T11:52:51.7137068-04:00]
 # Reindex trigger 2025-06-20T12:10:07-04:00
+# Reindex 2025-06-20T12:12:50-04:00
