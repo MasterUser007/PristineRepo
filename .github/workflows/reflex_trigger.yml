@@ -4,8 +4,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  reflex-confirm:
+  reflex-boot:
     runs-on: ubuntu-latest
     steps:
-      - name: ✅ Dispatch reached
-        run: echo "Reflex trigger dispatched successfully!"
+      - name: ♻️ Checkout code
+        uses: actions/checkout@v4
+
+      - name: ✅ Launch ReflexOps bootstrap
+        run: |
+          echo "ReflexOps launching..."
+          chmod +x .github/scripts/reflex_boot.sh
+          .github/scripts/reflex_boot.sh
