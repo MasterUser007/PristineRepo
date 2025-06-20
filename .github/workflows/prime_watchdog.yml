@@ -10,3 +10,5 @@ jobs:
     - name: Run Reflex Health Check
       shell: pwsh
       run: pwsh ./scripts/ReflexHealthCheck.ps1
+
+# Reflex trigger reindex [2025-06-20T11:50:15.5630609-04:00]

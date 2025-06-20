@@ -1,8 +1,0 @@
-site_name: ExoSuite Documentation
-theme:
-  name: material
-nav:
-  - Home: index.md
-  - PrimeEngineAI: primeengineai/index.md
-  - FactorEngine: factorengine/index.md
-  - QuantumHash: quantumhash/index.md

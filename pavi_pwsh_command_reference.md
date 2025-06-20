@@ -1,3 +1,0 @@
-# Pavi PowerShell Command Reference
----
-

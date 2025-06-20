@@ -1,4 +1,0 @@
-# file: C:\Users\leebo\Desktop\PristineRepo\ExoSuite\src\cache_manager.py
-# hypothesis_version: 6.135.11
-
-['./cache/persist.json', '10000', '60', 'CACHE_PERSIST_PATH', 'CacheManager', 'EXOSUITE_DATA', 'HASH_CACHE_TTL', 'SYMBOLIC_CACHE_MAX', 'SYMBOLIC_CACHE_TTL', 'cache_data.json', 'data', 'factor', 'factor_hits', 'factor_misses', 'hash', 'hash_hits', 'hash_misses', 'metrics', 'symbolic', 'symbolic_hits', 'symbolic_misses', 'w']

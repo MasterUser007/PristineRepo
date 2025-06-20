@@ -1,9 +1,0 @@
-name: Reflex Bug Fix CI/CD (DISABLED)
-on:
-  workflow_call:
-    types: [disabled]
-jobs:
-  noop:
-    runs-on: ubuntu-latest
-    steps:
-    - run: echo "⛔ Disabled until retry guard is implemented"

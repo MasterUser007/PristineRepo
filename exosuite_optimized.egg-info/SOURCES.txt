@@ -1,9 +1,0 @@
-README.md
-setup.py
-exosuite/__init__.py
-exosuite_optimized.egg-info/PKG-INFO
-exosuite_optimized.egg-info/SOURCES.txt
-exosuite_optimized.egg-info/dependency_links.txt
-exosuite_optimized.egg-info/top_level.txt
-tests/test_dummy.py
-tests/test_math_operations.py
