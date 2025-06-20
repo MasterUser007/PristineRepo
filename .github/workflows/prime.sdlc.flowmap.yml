@@ -1,17 +1,10 @@
-name: Reflex Patch Lifecycle
-
+# 🔒 Workflow disabled by ReflexOps
+name: DISABLED: prime.sdlc.flowmap.yml
 on:
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize, reopened, labeled]
-
+  workflow_call:
+    types: [disabled]
 jobs:
-  sandbox-test:
-    if: contains(github.event.pull_request.labels.*.name, 'reflex-autoheal')
+  skip:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Validate Reflex Patch
-        run: pwsh ./scripts/prime.test.sandbox.ps1
+    - run: echo '⛔ prime.sdlc.flowmap.yml has been disabled by ReflexOps'

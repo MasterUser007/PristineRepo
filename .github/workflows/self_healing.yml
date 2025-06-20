@@ -1,9 +1,10 @@
+# 🔒 Workflow disabled by ReflexOps
+name: DISABLED: self_healing.yml
 on:
-  workflow_dispatch:
-
+  workflow_call:
+    types: [disabled]
 jobs:
-  selfheal:
+  skip:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: echo '🛠️ Self-healing restored via Prime'
+    - run: echo '⛔ self_healing.yml has been disabled by ReflexOps'
