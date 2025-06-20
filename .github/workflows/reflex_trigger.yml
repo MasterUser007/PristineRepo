@@ -1,22 +1,11 @@
-name: Prime Watchdog
+name: Reflex Trigger
+
 on:
   workflow_dispatch:
 
-on:
-  schedule:
-    - cron: '0 3 * * *'  # Daily at 3 AM UTC
 jobs:
-  watchdog:
+  reflex-confirm:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Run Reflex Health Check
-      shell: pwsh
-      run: pwsh ./scripts/ReflexHealthCheck.ps1
-
-# Reflex trigger reindex [2025-06-20T11:50:15.5630609-04:00]
-
-# Trigger reindex [2025-06-20T11:52:51.7137068-04:00]
-# Reindex trigger 2025-06-20T12:10:07-04:00
-# Reindex 2025-06-20T12:12:50-04:00
-# Rename trigger 2025-06-20T12:14:19-04:00
+      - name: ✅ Dispatch reached
+        run: echo "Reflex trigger dispatched successfully!"
