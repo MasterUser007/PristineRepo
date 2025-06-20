@@ -11,4 +11,4 @@ jobs:
       shell: pwsh
       run: pwsh ./scripts/ReflexHealthCheck.ps1
 
-# trigger metadata reload
+# refresh dispatch registration [2025-06-20T11:21:08.8384634-04:00]
