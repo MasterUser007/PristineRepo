@@ -1,10 +1,9 @@
+name: Prime Watchdog
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'
 
 
-name: Prime Reflex Watchdog
+
 jobs:
   watchdog:
     runs-on: ubuntu-latest
