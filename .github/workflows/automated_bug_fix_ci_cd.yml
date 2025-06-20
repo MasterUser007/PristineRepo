@@ -1,13 +1,9 @@
-# [⚠️ DISABLED by ReflexOps] Broken runner awaiting rewrite
-
-name: 🚫 Disabled: Automated Bug Fix CI/CD
-
+name: Reflex Bug Fix CI/CD (DISABLED)
 on:
-  workflow_dispatch:  # Manual-only to preserve logs
-
+  workflow_call:
+    types: [disabled]
 jobs:
-  placeholder:
+  noop:
     runs-on: ubuntu-latest
     steps:
-      - name: Disabled
-        run: echo '⛔ This workflow is currently disabled by ReflexOps'
+    - run: echo "⛔ Disabled until retry guard is implemented"

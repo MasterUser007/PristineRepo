@@ -1,9 +1,15 @@
+name: Reflex CI
 on:
-  workflow_dispatch:
-
+  push:
+    branches: [main]
+  pull_request:
 jobs:
-  reflex:
-    runs-on: ubuntu-latest
+  reflex-run:
+    runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: echo '✅ Reflex-patched: ci.yml'
+    - uses: actions/checkout@v4
+    - name: Setup PowerShell
+      uses: actions/setup-powershell@v2
+    - name: Run ReflexFinal.ps1
+      shell: pwsh
+      run: pwsh ./scripts/ReflexFinal.ps1 -Profile reflex.sandbox
