@@ -1,0 +1,13 @@
+2025-06-21 12:36:47Z 🛠️ Installer started in C:\Users\leebo\OneDrive\Desktop\ReflexSuite
+2025-06-21 12:36:48Z 🧪 Environment Check:
+2025-06-21 12:36:48Z ps2exe: True
+2025-06-21 12:36:48Z AdminRights: True
+2025-06-21 12:36:48Z Out-GridView: True
+2025-06-21 12:36:48Z ExecutionPolicy: RemoteSigned
+2025-06-21 12:36:48Z .NETFramework: True
+2025-06-21 12:36:48Z PowerShell: 7.5.1
+2025-06-21 12:36:48Z ✅ Icon generated at C:\Users\leebo\OneDrive\Desktop\ReflexSuite\reflexsuite.ico
+2025-06-21 12:36:48Z ✅ ReflexSuite.ps1 GUI written
+2025-06-21 12:36:49Z ✅ Compiled C:\Users\leebo\OneDrive\Desktop\ReflexSuite\ReflexSuite.exe
+2025-06-21 12:36:49Z ✅ Shortcut created on Desktop
+2025-06-21 12:36:49Z ✅ Installer completed successfully
