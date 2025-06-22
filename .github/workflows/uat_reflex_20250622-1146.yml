@@ -1,0 +1,13 @@
+# Reflex ignition: 20250622-1146
+name: UAT_POC_Engines_1
+on:
+  push:
+    paths:
+      - uat_trigger.txt
+  workflow_dispatch:
+jobs:
+  reflex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm UAT Execution
+        run: echo '✅ UAT_POC_Engines_1 Fired'
