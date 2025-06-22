@@ -1,0 +1,12 @@
+name: UAT_PrimeEngineAI
+on:
+  push:
+    paths:
+      - uat_trigger.txt
+  workflow_dispatch:
+jobs:
+  reflex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reflex Engine Launch
+        run: echo '✅ UAT PrimeEngineAI Reflex Trigger Fired @ 20250622-1251'
