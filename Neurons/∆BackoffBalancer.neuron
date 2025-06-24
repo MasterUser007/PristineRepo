@@ -1,0 +1,6 @@
+{
+  "action": "Tune retry intervals based on drop signature",
+  "name": "∆BackoffBalancer",
+  "trigger": "High failure rate",
+  "created": "2025-06-24T08:59:43.7212975-04:00"
+}
