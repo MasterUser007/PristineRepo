@@ -1,0 +1,7 @@
+{
+  "Lessons":    "ExoCore/Lessons/",
+  "MappingTree":"ExoCore/MappingTree/",
+  "Telemetry":  "ExoCore/Telemetry/",
+  "Infra":      "ExoCore/Infra/",
+  "CI":         "ExoCore/CI/"
+}
