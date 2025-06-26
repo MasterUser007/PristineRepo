@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - echo "🔧 Installing PowerShell Core"
+      - curl -sSL https://aka.ms/install-powershell.sh | bash
+      - pwsh -Command "$PSVersionTable.PSVersion"
+
+  build:
+    commands:
+      - echo "🧠 Running Exo cognition cycle..."
+      - pwsh ExoCore/exo-learn.ps1
+      - pwsh ExoCore/exo-advise.ps1
+
+artifacts:
+  files:
+    - ExoCore/MappingTree/*
+    - ExoCore/Telemetry/*
+    - ExoCore/Lessons/*
+    - ExoCore/README.md
