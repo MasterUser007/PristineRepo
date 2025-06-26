@@ -1,1 +1,1 @@
-# [ full script content you just ran goes here ]
+# [ cloudseed.ps1 script content here — paste the final working version ]
