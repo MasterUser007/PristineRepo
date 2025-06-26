@@ -15,6 +15,7 @@ phases:
       - pwsh ExoCore/exo-learn.ps1
       - pwsh ExoCore/exo-advise.ps1
       - pwsh ExoCore/exo-selftest.ps1
+      - pwsh ExoCore/exo-selftest.ps1
 
 artifacts:
   files:
