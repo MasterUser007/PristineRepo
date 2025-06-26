@@ -1,15 +1,18 @@
-# === EXO ENGINE HARNESS: Manifest-Based ===
+# === EXO ENGINE HARNESS (manifest-aware) ===
 Write-Host "
-🧠 Loading DataLabManifest..."
-\ = Get-Content "C:\Users\leebo\Documents\ExoCore\DataLabManifest.json" | ConvertFrom-Json
+🚦 Launching Engine Harness..."
+\ = Join-Path \ "DataLabManifest.json"
+if (-Not (Test-Path \)) {
+  Write-Error "❌ DataLabManifest.json missing. Cannot proceed."
+  exit 1
+}
+\ = Get-Content \ | ConvertFrom-Json
 foreach (\ in \.engines) {
   \ = Join-Path \ \
   if (Test-Path \) {
     Write-Host "⚙️ Running Engine: \"
-    pwsh \
+    pwsh -File \
   } else {
     Write-Warning "🚫 Engine not found: \"
   }
 }
-Write-Host "
-✅ Data Lab Engine Run Complete"

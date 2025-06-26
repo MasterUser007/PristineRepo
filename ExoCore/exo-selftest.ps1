@@ -7,6 +7,10 @@ try {
   Write-Warning "🕘 MappingTree not found — skipping test"
   exit 0
 }
+if (-not (Test-Path \)) {
+  Write-Error "❌ MappingTree reference invalid"
+  exit 1
+}
 if ((Get-Content \).Length -lt 10) {
   Write-Error "❌ MappingTree exists but seems empty"
   exit 1
