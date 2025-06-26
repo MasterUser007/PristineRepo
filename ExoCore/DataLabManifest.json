@@ -1,0 +1,13 @@
+{
+  "engines": [
+    "primecore.ps1",
+    "exo-factor.ps1",
+    "exo-qhash.ps1"
+  ],
+  "lessonContract": "exo_lesson_*.md",
+  "outputPaths": [
+    "MappingTree/",
+    "Telemetry/",
+    "Lessons/"
+  ]
+}

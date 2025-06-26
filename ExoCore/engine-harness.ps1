@@ -1,13 +1,15 @@
-# === EXO ENGINE HARNESS ===
+# === EXO ENGINE HARNESS: Manifest-Based ===
 Write-Host "
-🚦 Launching Exo Engines..." -ForegroundColor Cyan
-\ = @("primecore.ps1", "exo-factor.ps1", "exo-qhash.ps1")
-foreach (\ in \) {
+🧠 Loading DataLabManifest..."
+\ = Get-Content "C:\Users\leebo\Documents\ExoCore\DataLabManifest.json" | ConvertFrom-Json
+foreach (\ in \.engines) {
   \ = Join-Path \ \
   if (Test-Path \) {
-    Write-Host "⚙️ Running \..."
+    Write-Host "⚙️ Running Engine: \"
     pwsh \
   } else {
-    Write-Warning "🚫 Missing: \"
+    Write-Warning "🚫 Engine not found: \"
   }
 }
+Write-Host "
+✅ Data Lab Engine Run Complete"
