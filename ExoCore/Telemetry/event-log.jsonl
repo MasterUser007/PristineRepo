@@ -9,3 +9,14 @@
   "signal": "Positive",
   "insight": "Exo learned from LSN-001 → result: Success"
 }
+{
+  "learnedFrom": "LSN-001",
+  "contextId": "pipeline:core-deploy",
+  "timestamp": "2025-06-25T22:16:14",
+  "tags": [
+    "!LEARNED",
+    "auto:inferred"
+  ],
+  "signal": "Positive",
+  "insight": "Exo learned from LSN-001 → result: Success"
+}
