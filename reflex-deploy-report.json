@@ -1,0 +1,10 @@
+{
+  "commit": "9cee8c8789162046b8fdaa2112f538dbfda8a668",
+  "capsule": "reflex-console-uat",
+  "deployedTo": {
+    "GitHubPages": "https://masteruser007.github.io/PristineRepo/capsules/console/0.1.0",
+    "S3": "s3://your-capsule-bucket/console/0.1.0/"
+  },
+  "deployedAt": "2025-06-28T04:20:28Z",
+  "symbolicPrime": "console/0.1.0"
+}
