@@ -1,0 +1,35 @@
+name: Optimized Workflow
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**"
+jobs:
+  test:
+    strategy:
+      matrix:
+        node-version: [14, 16, 18]
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Build site
+        run: npm run build
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+  cache:
+    steps:
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: "${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}"
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Monitor Workflow Execution Time
+        run: |
+          curl -s -H "Authorization: token $GITHUB_TOKEN" \
+          https://api.github.com/repos/MasterUser007/PristineRepo/actions | jq '.workflow_runs | map({id, duration: (.updated_at | fromdate - .created_at | fromdate), conclusion})'
