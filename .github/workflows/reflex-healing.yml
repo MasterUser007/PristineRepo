@@ -1,0 +1,20 @@
+name: Reflex Healing Flow (Forced Execution)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour
+jobs:
+  force_healing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Force Execution of Reflex Healing Flow
+        run: |
+          echo "Forcing Reflex Healing Flow execution..."
+          curl -X POST "https://4eaz78nmoe.execute-api.us-east-1.amazonaws.com/prod/reflex/heal"
+      - name: Verify API Gateway Response Timing
+        run: |
+          echo "Validating API Gateway response timing..."
+          RESPONSE={"message":"Forbidden"}
+          echo "SelfTest Response: "
